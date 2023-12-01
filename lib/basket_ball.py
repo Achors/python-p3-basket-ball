@@ -182,3 +182,26 @@ def game_dict():
             ]
         }
     }
+
+
+def num_points_per_game(player_name, team_data):
+    points_per_game_list = []
+    for team in team_data.values():
+        for player in team["players"]:
+            if player["name"] == player_name:
+                points_per_game_list.append(player["points_per_game"])
+
+    return points_per_game_list if points_per_game_list else None
+    
+def player_age():
+    pass
+def team_colors():
+    pass
+def team_names():
+    pass
+def player_numbers():
+    pass
+def player_stats():
+    pass
+def average_rebounds_by_shoe_brand():
+    pass
